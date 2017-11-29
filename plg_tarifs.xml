@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0"
+           type="plugin"
+           group="ajax"
+           method="upgrade">
+	<name>ORTANA - Tarifs</name>
+	<version>1.0</version>
+	<creationDate>November 22, 2017</creationDate>
+	<author>TIAFENO Finel</author>
+	<authorEmail>tiafenofnel@gmail.com</authorEmail>
+	<authorUrl>http://www.falicrea.com</authorUrl>
+	<license>GNU General Public License version 2 or later</license>
+	<copyright>Copyright (C) 2017 Falicrea. All rights reserved.</copyright>
+	<description>Ortana Plugin, get tarifs</description>
+
+	<files>
+		<filename plugin="plg_tarifs">plg_tarifs.php</filename>
+		<filename>tarifs.class.php</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="ortana_mail"
+				       type="text"
+							 label="Votre adresse e-mail"
+				       description="">
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
