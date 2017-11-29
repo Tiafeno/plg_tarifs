@@ -4,8 +4,8 @@ require dirname(__FILE__) . '/tarifs.class.php';
 // Import library dependencies
 jimport('joomla.plugin.plugin');
 
-class plgAjaxTarifs extends JPlugin {
-  public function onAjaxTarifs() {
+class plgAjaxPlg_tarifs extends JPlugin {
+  public function onAjaxPlg_tarifs() {
     $input = JFactory::getApplication()->input;
     $tarifs = new ReflectionClass( 'Tarifs' );
     if ($tarifs->hasMethod( $input->get( 'method' ) )) {
